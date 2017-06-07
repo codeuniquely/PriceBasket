@@ -1,0 +1,40 @@
+{
+  "name": "PriceBasket",
+  "description": "Price Basket Code Test",
+  "version": "1.0.0",
+  "author": "Steve Saxton <steves@codeuniquely.co.uk>",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --progress",
+    "test": "NODE_ENV=testing mocha-webpack --opts mocha-webpack.opts",
+    "debug": "webpack & node debug-brk build/PriceBasket.js",
+    "inspect": "webpack & node --inspect build/PriceBasket.js",
+    "lint": "eslint --ext .js ./*webpack*.js src",
+    "lintfix": "eslint --fix --ext .js ./*webpack*.js src"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.1",
+    "eslint": "^3.18.0",
+    "eslint-config-majestic": "^5.8.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-import": "^2.2.0",
+    "inject-loader": "^3.0.0",
+    "jshint": "^2.9.3",
+    "mocha": "^3.2.0",
+    "mocha-webpack": "^0.7.0",
+    "webpack": "^2.6.1",
+    "webpack-build-notifier": "^0.1.13",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

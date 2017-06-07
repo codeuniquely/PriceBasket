@@ -1,0 +1,6 @@
+--require babel-core/register
+--webpack-config webpack.config.js
+--colors
+--reporter spec
+--ui bdd
+test/*.spec.js
